@@ -1,5 +1,5 @@
 # Christmas-Messages-Api
-It's that time of the season. A time to share and connect with your loved ones, and what better way than to send them lovely yuletide messages.
+It's that time of the year. A time to share and connect with your loved ones, and what better way than to send them lovely yuletide messages.
 
 # API Documentation
 Allowed HTTPs rquests:
