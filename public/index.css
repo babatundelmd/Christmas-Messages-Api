@@ -1,0 +1,22 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+section{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.api-body{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35%;
+}
+
+.api-body h1{
+    font-size: 3rem;
+}

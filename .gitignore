@@ -78,3 +78,8 @@ sw.*
 
 # Ignore Package.lock.json
 package-lock.json
+
+# Firebase logs
+firebase-debug.log
+
+.firebase
