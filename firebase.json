@@ -8,7 +8,7 @@
     ],
     "rewrites": [
       {
-        "source": "/api/christmas-messages",
+        "source": "**",
         "function": "app"
       }
     ]

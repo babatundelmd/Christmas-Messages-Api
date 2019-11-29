@@ -221,6 +221,11 @@ app.get('/api/christmas-messages', (req, res) => {
     res.send(messages);
 });
 
+app.get('/api/christmas-messages-cached', (req, res) => {
+    //Adds Caching to the dynamic server code
+    res.set('Cache-Control', 'public, max-age=300, s-maxage=600');
+    res.send(messages);
+});
 
 app.get('/api/christmas-messages/:id', (req, res) => {
     const message = messages.find(m => m.id === parseInt(req.params.id));

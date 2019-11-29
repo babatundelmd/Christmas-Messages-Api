@@ -82,4 +82,6 @@ package-lock.json
 # Firebase logs
 firebase-debug.log
 
-.firebase
+.firebase/
+functions/
+public/

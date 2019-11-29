@@ -210,12 +210,12 @@ const messages = [
     }
 ];
 
-app.get('/api/ChristmasMessages', (req, res) => {
+app.get('/api/christmas-messages', (req, res) => {
     res.send(messages);
 });
 
 
-app.get('/api/ChristmasMessages/:id', (req, res) => {
+app.get('/api/christmas-messages/:id', (req, res) => {
     const message = messages.find(m => m.id === parseInt(req.params.id));
     if (!message) res.status(404).send("There is no Christmas message is with that Id 😞");
     res.send(message);
