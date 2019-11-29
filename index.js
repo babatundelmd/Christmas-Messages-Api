@@ -122,9 +122,92 @@ const messages = [
     {
         id: 30,
         message: "Let the spirit of love gently fill our hearts and homes. In this loveliest of celebrations may you find many reasons for happiness."
+    },
+    {
+        id: 31,
+        message: "There are some people who want to throw their arms around you simply because it is Christmas; there are other people who want to strangle you simply because it is Christmas. Which one are you?"
+    },
+    {
+        id: 32,
+        message: "Having you as my friend makes me feel as if it is Christmas every day.  Merry Christmas to my dear friend, may this season be filled with joy and laughter for you and your family."
+    },
+    {
+        id: 33,
+        message: "Christmas is the gentlest, loveliest festival of the revolving year — and yet, for all that, when it speaks, its voice has strong authority. ~W.J. Cameron"
+    },
+    {
+        id: 34,
+        message: "The one who has not Christmas in his heart will never find it under a tree. Celebrate the true meaning of Christmas and embrace the warmth of your closest ones. Merry Christmas"
+    },
+    {
+        id: 35,
+        message: "A silent night, a star above, a blessed gift of hope and love. A Merry Christmas to you and your whole family."
+    },
+    {
+        id: 36,
+        message: "May your heart and home be filled with all of the joys the festive season brings. Here is a toast to a Merry Christmas and prosperous New Year!"
+    },
+    {
+        id: 37,
+        message: "May this Christmas end the present year on a cheerful note and make way for a fresh and bright New Year. Here’s wishing you a Merry Christmas and a Happy New Year!"
+    },
+    {
+        id: 38,
+        message: "May your Christmas sparkle with moments of love, laughter and goodwill, And may the year ahead be full of contentment and joy."
+    },
+    {
+        id: 39,
+        message: "On Christmas, there’s a reason to be happy and a reason to smile, and there’s a reason why I’m sending Christmas wishes your way. You’re it."
+    },
+    {
+        id: 40,
+        message: "Wishing you a joyous Christmas and a happy and prosperous New Year."
+    },
+    {
+        id: 41,
+        message: "One of the most glorious messes in the world is the mess created in the living room on Christmas day. Don’t clean it up too quickly. Savor and enjoy the moment. Merry Christmas!"
+    },
+
+    {
+        id: 42,
+        message: "The Gift of Christmas is a precious reminder that we are loved! I am so lucky to have someone I love so much at my side this festive season."
+    },
+    {
+        id: 43,
+        message: "A Christmas candle is a lovely thing; It makes no noise at all but softly gives itself away; while quite unselfish,it grows small."
+    },
+
+    {
+        id: 44,
+        message: "A little smile, a word of cheer a bit of love from someone near a little gift from one held dear, best wishes for the coming year."
+    },
+
+    {
+        id: 45,
+        message: "Christmas is not a time for celebration, but a state of mind. To cherish peace and kindness, to be plenteous in mercy, is to have the real spirit of Christmas."
+    },
+
+    {
+        id: 46,
+        message: "There is no greater gift this festive season than spending time with family all around the Christmas tree."
+    },
+    {
+        id: 47,
+        message: "May the good times and treasures of the present become the golden memories of tomorrow. Wish you lots of love, joy, and happiness. MERRY CHRISTMAS"
+    },
+    {
+        id: 48,
+        message: "Christmas is a special time to enjoy with, All your loved ones, To spread the divinity and cheer around, Merry Christmas and a happy new year!"
+    },
+    {
+        id: 49,
+        message: "The gift of love. The gift of peace. The gift of happiness.  May all these be yours at Christmas."
+    },
+
+    {
+        id: 50,
+        message: "May you have the spirit of Christmas which is Peace, the gladness of Christmas which is Hope, and the Heart of Christmas which is Love."
     }
-
-
 ];
 
 app.get('/api/ChristmasMessages', (req, res) => {
