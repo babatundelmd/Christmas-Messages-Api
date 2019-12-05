@@ -85,3 +85,4 @@ firebase-debug.log
 .firebase/
 functions/
 public/
+.env

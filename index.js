@@ -1,5 +1,13 @@
 const express = require('express');
 const app = express();
+require('dotenv/config')
+const MongoClient = require('mongodb').MongoClient;
+const uri = process.env.DB_CONNECTION;
+const client = new MongoClient(uri, { useUnifiedTopology: true });
+client.connect(() => console.log('Database is connected🎨'));
+
+
+
 
 const messages = [
     {
@@ -301,6 +309,8 @@ app.get('/api/christmas-messages/:id', (req, res) => {
     if (!message) res.status(404).send("There is no Christmas message is with that Id 😞");
     res.send(message);
 });
+
+// mongoose.connect('mongodb+srv://user:christmas~!@cluster0-t2t8t.azure.mongodb.net/test?retryWrites=true&w=majority', () => console.log('Connected to Database'))
 // PORT
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listening on ${port}`));
