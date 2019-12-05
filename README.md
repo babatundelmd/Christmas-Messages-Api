@@ -6,6 +6,7 @@ The Api Endpoints are hosted on Firebase
 
 # Allowed HTTPs rquests
 GET: Get a message or list of Christmas Messages
+POST: Post a message containing author and the message
 
 # GET All Christmas Messages
 To GET a list of all the Christmas Messages
