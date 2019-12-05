@@ -19,6 +19,7 @@
   "homepage": "https://github.com/babatundelmd/Christmas-Messages-Api#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.7.13"
   }
 }
