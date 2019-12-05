@@ -80,7 +80,7 @@ const messages = [
         message: "May your world be filled with warmth and good cheer this Holy season, and throughout the year."
     },
     {
-        id: "20",
+        id: 20,
         message: "Wish you a Merry Christmas and may this festival bring abundant joy and happiness in your life!"
     },
     {
@@ -207,7 +207,88 @@ const messages = [
     {
         id: 50,
         message: "May you have the spirit of Christmas which is Peace, the gladness of Christmas which is Hope, and the Heart of Christmas which is Love."
-    }
+    },
+
+    {
+        id: 51,
+        message: "May this Christmas fill your hearts with warmth, peace and joy! Have a Holy and a Blessed Christmas!"
+    },
+    {
+        id: 52,
+        message: "During this time of faith and family, may the true meaning of Christmas fill you with joy. Wishing you a Merry Christmas and a blessed New Year."
+    },
+    {
+        id: 53,
+        message: "Amidst the Christmas carols, eggnog, cookies, and mounds of presents, may your heart be filled with contentment and the unique feeling of joy that the season brings."
+    },
+    {
+        id: 54,
+        message: "My special wishes to you and to all those too are close to you. May you have a Christmas that is more special than it has ever been. May Baby Jesus bless you abundantly."
+    },
+    {
+        id: 55,
+        message: "Christmas is a season of great joy: a time for remembering the past and hoping for the future. May the glorious message of peace and love fill you with joy during this wonderful season."
+    },
+    {
+        id: 56,
+        message: "This time of year brings festivities and family fun. It is a time for reminiscing and looking forward. Wishing you wonderful memories during this joyous season."
+    },
+    {
+        id: 57,
+        message: "A Christmas candle is a lovely thing; It makes no noise at all, But softly gives itself away; While quite unselfish, it grows small."
+    },
+    {
+        id: 58,
+        message: "During the miraculous time that is Christmas may you see with the eyes of a child, experience the wonder of love, and truly enjoy all that the season has to offer."
+    },
+    {
+        id: 59,
+        message: "As you celebrate the glory of this miraculous season, may your home be filled with love, peace, and joy. May these blessings follow you throughout the New Year."
+    },
+    {
+        id: 60,
+        message: "The best present one can hope for this year is to spend time together. I can’t wait to celebrate the holidays with you."
+    },
+    {
+        id: 61,
+        message: "To a joyful present and a well-remembered past. Best wishes for Happy Holidays and a magnificent New Year."
+    },
+    {
+        id: 62,
+        message: "What can be better than opening presents, eating food and singing Christmas music? Doing all those things with the family like you."
+    },
+    {
+        id: 63,
+        message: "May this Christmas be a fitting ending to a successful year for you. May the New Year bring fresh hopes and bright beginnings."
+    },
+    {
+        id: 64,
+        message: "As we rejoice and celebrate this wonderful season of Christmas, let us not forget to thank baby Jesus for coming into our lives. Let us together prepare ourselves to welcome him into the homes of our hearts. Merry Christmas to you and your loved ones."
+    },
+    {
+        id: 65,
+        message: "Poinsettias on the table and a wreath on the door are reminders that Christmas is near. Wishing you a beautiful Christmas."
+    },
+    {
+        id: 66,
+        message: "A friend like you is what makes Christmas special to me. Nothing makes me happier than sharing this season with you and I can’t wait for Christmas to get here."
+    },
+    {
+        id: 67,
+        message: "I wish you a Merry Christmas, I wish you a Merry Christmas, I wish you a Merry Christmas because you’re so dear."
+    },
+    {
+        id: 68,
+        message: "May your home be filled with peace and bliss! May Jesus shower His abundant blessings on you! Here’s wishing you a Merry Christmas and a Promising New Year!"
+    },
+    {
+        id: 69,
+        message: "May this Christmas season bring your closer to all those that you treasure in your heart. Have a Merry Christmas and a Happy New year!"
+    },
+    {
+        id: 70,
+        message: "May this Christmas burn away all your sadness and bury the tears so that your life is perpetually filled with happiness and joy."
+    },
 ];
 
 app.get('/api/christmas-messages', (req, res) => {
