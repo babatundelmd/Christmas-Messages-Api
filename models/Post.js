@@ -14,4 +14,4 @@ const PostSchema = mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('Message Entries', PostSchema);
+module.exports = mongoose.model('Entries', PostSchema);

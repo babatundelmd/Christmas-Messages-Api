@@ -1,6 +1,6 @@
-const express = require('express');
+const express = require( 'express' );
 const router = express.Router();
-const Post = require('../models/Post');
+const Post = require( '../models/Post' );
 
 const messages = [
     {
@@ -292,25 +292,36 @@ const messages = [
     },
 ];
 
-router.get('/', (req, res) => {
-    res.send(messages);
-});
+router.get( '/', ( req, res ) =>
+{
+    res.send( messages );
+} );
 
-router.post('/', (req, res) => {
-    const post = new Post({
-        author: req.body.author,
-        message: req.body.message
-    });
-    post.save()
-        .then(data => res.json(data))
-        .catch(err => res.json({ message: err }));
-});
+router.post( '/', async ( req, res ) =>
+{
+    const post = new Post(
+        {
+            author: req.body.author,
+            message: req.body.message
+        }
+
+    );
+
+    try {
+        const savedPost = await post.save();
+        res.json( savedPost );
+    } catch ( err ) {
+        res.json( { message: err } )
+    }
+
+} );
 
 
-router.get('/api/christmas-messages/:id', (req, res) => {
-    const message = messages.find(m => m.id === parseInt(req.params.id));
-    if (!message) res.status(404).send("There is no Christmas message is with that Id 😞");
-    res.send(message);
-});
+router.get( '/api/christmas-messages/:id', ( req, res ) =>
+{
+    const message = messages.find( m => m.id === parseInt( req.params.id ) );
+    if ( !message ) res.status( 404 ).send( "There is no Christmas message is with that Id 😞" );
+    res.send( message );
+} );
 
 module.exports = router;

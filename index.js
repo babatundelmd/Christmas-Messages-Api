@@ -1,21 +1,21 @@
-const express = require('express');
+const express = require( 'express' );
 const app = express();
-require('dotenv/config');
-const bodyParser = require('body-parser');
-const MongoClient = require('mongodb').MongoClient;
+const mongoose = require( 'mongoose' )
+require( 'dotenv/config' );
+const bodyParser = require( 'body-parser' );
 
 
-app.use(bodyParser.json());
+
+app.use( bodyParser.json() );
 
 //Import routes
-const route = require('./api/christmas-messages');
-app.use('/api/christmas-messages', route);
-
-
+const route = require( './api/christmas-messages' );
+app.use( '/api/christmas-messages', route );
 
 const uri = process.env.DB_CONNECTION;
-const client = new MongoClient(uri, { useUnifiedTopology: true });
-client.connect(() => console.log('Database is connected🎨'));
+
+mongoose.connect( uri, { useUnifiedTopology: true, useNewUrlParser: true }, () => console.log( 'Database is connected✅' ) );
+
 // PORT
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Listening on ${port}`));
+app.listen( port, () => console.log( `Listening on ${ port }` ) );
