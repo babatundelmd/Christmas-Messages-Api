@@ -1,5 +1,6 @@
-const mongoose = require('mongoose');
-const PostSchema = mongoose.Schema({
+const mongoose = require( 'mongoose' );
+const PostSchema = mongoose.Schema( {
+
     author: {
         type: String,
         required: true
@@ -12,6 +13,7 @@ const PostSchema = mongoose.Schema({
         type: Date,
         default: Date.now
     }
-});
 
-module.exports = mongoose.model('Entries', PostSchema);
+} );
+
+module.exports = mongoose.model( 'Entries', PostSchema );

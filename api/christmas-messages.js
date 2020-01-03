@@ -305,10 +305,12 @@ router.post( '/', async ( req, res ) =>
             message: req.body.message
         }
 
+
     );
 
     try {
         const savedPost = await post.save();
+        console.log( "It works here!" );
         res.json( savedPost );
     } catch ( err ) {
         res.json( { message: err } )
