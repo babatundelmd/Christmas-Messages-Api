@@ -1,5 +1,13 @@
-const functions = require('firebase-functions');
-const express = require('express')
+const functions = require( 'firebase-functions' );
+
+// // Create and Deploy Your First Cloud Functions
+// // https://firebase.google.com/docs/functions/write-firebase-functions
+//
+// exports.helloWorld = functions.https.onRequest((request, response) => {
+//  response.send("Hello from Firebase!");
+// });
+const functions = require( 'firebase-functions' );
+const express = require( 'express' )
 const app = express();
 
 
@@ -298,23 +306,26 @@ const messages = [
     },
 ];
 
-app.get('/api/christmas-messages', (req, res) => {
-    res.send(messages);
-});
+app.get( '/api/christmas-messages', ( req, res ) =>
+{
+    res.send( messages );
+} );
 
-app.get('/api/christmas-messages-cached', (req, res) => {
+app.get( '/api/christmas-messages-cached', ( req, res ) =>
+{
     //Adds Caching to the dynamic server code
-    res.set('Cache-Control', 'public, max-age=300, s-maxage=600');
-    res.send(messages);
-});
+    res.set( 'Cache-Control', 'public, max-age=300, s-maxage=600' );
+    res.send( messages );
+} );
 
-app.get('/api/christmas-messages/:id', (req, res) => {
-    const message = messages.find(m => m.id === parseInt(req.params.id));
-    if (!message) res.status(404).send("There is no Christmas message is with that Id 😞");
-    res.send(message);
-});
+app.get( '/api/christmas-messages/:id', ( req, res ) =>
+{
+    const message = messages.find( m => m.id === parseInt( req.params.id ) );
+    if ( !message ) res.status( 404 ).send( "There is no Christmas message is with that Id 😞" );
+    res.send( message );
+} );
 // PORT
 // const port = process.env.PORT || 3000;
 // app.listen(port, () => console.log(`Listening on ${port}`));
 
-exports.app = functions.https.onRequest(app)
+exports.app = functions.https.onRequest( app )
