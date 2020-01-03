@@ -13,10 +13,10 @@ To GET a list of all the Christmas Messages
 
 /api/christmas-messages
 
-https://christtheking-c753c.firebaseapp.com/api/christmas-messages
+https://christmas-ea96b.firebaseapp.com/api/christmas-messages
 
 # GET A Single Christmas Message By id
 
 /api/christmas-messages/id
 
-https://christtheking-c753c.firebaseapp.com/api/christmas-messages/25
+https://christmas-ea96b.firebaseapp.com/api/christmas-messages/25
