@@ -11,12 +11,12 @@ POST: Post a message containing author and the message
 # GET All Christmas Messages
 To GET a list of all the Christmas Messages
 
-/api/christmas-messages
+`/api/christmas-messages`
 
 https://christmas-ea96b.firebaseapp.com/api/christmas-messages
 
 # GET A Single Christmas Message By id
 
-/api/christmas-messages/id
+`/api/christmas-messages/id`
 
 https://christmas-ea96b.firebaseapp.com/api/christmas-messages/25
